@@ -37,12 +37,13 @@ package utilities;
 		private String link = "";
 		
 		/**
-		 * Due tipi di costruttori permettono la lettura controllata del dataset. Nel primo caso si inizializza la variabile limit a 500,
+		 * Due tipi di costruttori permettono la lettura controllata del dataset. Nel primo caso si inizializza la variabile limit a 1000,
 		 * nel secondo si passa al costruttore il parametro contenente il valore del limite desiderato.
+		 * @return 
 		 * 
 		 */
 		
-		public DownloadAndParsing() {
+		public DownloadAndParsing () {
 			this.vegetablesList = new ArrayList<Vegetablesproducts>();
 			this.limit = 1000;
 		}
