@@ -36,12 +36,12 @@ package utilities;
 		 * 
 		 */
 		
-		public DownloadAndParsing () {
+		public DownloadandParsing () {
 			this.vegetablesList = new ArrayList<Vegetablesproducts>();
 			this.limit = 1000;
 		}
 		
-		public DownloadAndParsing(int limit) {
+		public DownloadandParsing(int limit) {
 			this.vegetablesList = new Vector<Vegetablesproducts>();
 			this.limit = limit;
 		}
