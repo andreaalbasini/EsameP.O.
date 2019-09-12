@@ -86,4 +86,53 @@ package utilities;
 			return link;
 		}
 		
-}
+		public List<Vegetablesproducts> parsing(String link) {
+			String line = "";
+		    String csvSplitBy = ",";  // carattere che divide i valori del csv
+		    BufferedReader br= null;
+		    boolean flag1= false, flag2= false;
+		    int count = 1;
+		    
+		    try {
+		    	URL urlCSV = new URL(link);
+		    	br = new BufferedReader(new InputStreamReader(urlCSV.openStream()));
+		    	
+		    	while (((line = br.readLine()) != null) && !flag2) {
+		    		if (count==this.limit) flag2= true;  // esce dal ciclo quando la variabile count è uguale a limit
+		    		if (!flag1) {flag1=true; continue;}  // permette di saltare la prima riga del csv
+		    		String[] valore = line.split(csvSplitBy);  // dopo aver letto una riga del csv la divide ogni volta che trova un carattere ","
+		    		vegetablesList.add(new Vegetablesproducts (valore[0],valore[1],valore[2],valore[3],valore[4],valore[5],valore[6],Integer.parseInt(valore[7]),Double.parseDouble(valore[8]) ));
+	    			
+		    		count++;
+		    	}
+		    } catch (FileNotFoundException e) {
+		   		e.printStackTrace();
+		   	} catch (IOException e) {
+		   		e.printStackTrace();
+		   	} finally {
+		    	if (br != null) {
+		    		try {
+		    			br.close();
+		    		} catch (IOException e) {
+		    			e.printStackTrace();
+		   			}
+		   		}
+		   	}
+		    System.out.println("Parsing completato.\n");
+		    
+	
+		    return vegetablesList;
+		}
+		
+		// Metodo che restituisce la lista Erasmus in alternativa al metodo parsing
+		
+		public List<Vegetablesproducts> getData(){
+			return vegetablesList;
+		}
+	
+	
+		
+		
+		
+	}	
+
