@@ -86,6 +86,15 @@ package utilities;
 			return link;
 		}
 		
+		/**
+		 * Metodo che effettua il parsing del file csv estratto precedentemente col metodo download
+		 * 
+		 * @param link contiene l'url del csv
+		 * @return lista di oggetti Vegetablesproducts con i relativi attributi contenenti i valori del dataset
+		 */
+		
+		
+		
 		public List<Vegetablesproducts> parsing(String link) {
 			String line = "";
 		    String csvSplitBy = ",";  // carattere che divide i valori del csv
