@@ -60,7 +60,7 @@ package utilities;
 				   
 				   while ((line = br.readLine())!=null) {  // legge finchè il file è vuoto
 					   data += line;
-					   //System.out.println(line);  //stampa il dataset in una righa per il debug
+					   
 				   }
 				 } finally {
 				   input.close();
@@ -124,7 +124,7 @@ package utilities;
 		    return vegetablesList;
 		}
 		
-		// Metodo che restituisce la lista Erasmus in alternativa al metodo parsing
+		// Metodo che restituisce la lista Vegetablesproducts in alternativa al metodo parsing
 		
 		public List<Vegetablesproducts> getData(){
 			return vegetablesList;
