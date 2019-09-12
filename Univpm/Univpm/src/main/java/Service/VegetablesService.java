@@ -24,7 +24,7 @@ public class VegetablesService {
 
 
 	
-		private String url = "https://ec.europa.eu/agriculture/sites/agriculture/files/markets-and-prices/price-monitoring/market-prices-vegetable-products_en.csv";
+		private String url = " http://data.europa.eu/euodp/data/api/3/action/package_show?id=b8c13971-e315-470e-a125-40d67fe7067b";
 		private DownloadandParsing utilities;
 		//private Metadata serviceMeta;
 		//private Stats serviceStats;
