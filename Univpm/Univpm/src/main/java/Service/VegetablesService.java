@@ -44,7 +44,7 @@ public class VegetablesService {
 			String link="";
 			
 			link = utilities.download(url);
-		//	lista = utilities.parsing(link);
+		    lista = utilities.parsing(link);
 		}
 		
 		/**
