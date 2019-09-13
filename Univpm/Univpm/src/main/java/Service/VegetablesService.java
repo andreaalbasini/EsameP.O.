@@ -26,7 +26,7 @@ public class VegetablesService {
 	
 		private String url = " http://data.europa.eu/euodp/data/api/3/action/package_show?id=b8c13971-e315-470e-a125-40d67fe7067b";
 		private DownloadandParsing utilities;
-		//private Metadata serviceMeta;
+		private Metadata serviceMeta;
 		//private Stats serviceStats;
 		private List<Vegetablesproducts> lista;
 		
@@ -37,7 +37,7 @@ public class VegetablesService {
 		public VegetablesService() {
 			
 			this.utilities = new DownloadandParsing();
-			//this.serviceMeta = new Metadata();
+			this.serviceMeta = new Metadata();
 			//this.serviceStats = new Stats();
 	
 			
@@ -51,7 +51,7 @@ public class VegetablesService {
 		 * Metodo che restituisce i metadati del file CSV
 		 * @return la lista contenente i metadati
 		 */
-		/*public List<Map> getMetadata() {
+		public List<Map> getMetadata() {
 			return serviceMeta.getMetadata();
 		}
 		
@@ -89,7 +89,7 @@ public class VegetablesService {
 		 * @param list lista che si ottiene dopo aver effettuato il parsing, vettore di oggetti "Vegetablesproducts"
 		 * @return la lista che contiene i valori di un determinato campo
 		 */
-		public List fieldValues(String fieldName, List list) {
+		/*public List fieldValues(String fieldName, List list) {
 			List<Object> values = new ArrayList<>();
 			try {
 				Field[] fields = Vegetablesproducts.class.getDeclaredFields();
@@ -117,5 +117,5 @@ public class VegetablesService {
 			return values;
 		}
 		
-		
+		*/
 }
