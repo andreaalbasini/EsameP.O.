@@ -3,16 +3,21 @@ package controller;
 import model.Vegetablesproducts;
 import Service.*;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.json.BasicJsonParser;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.http.HttpStatus;
+import org.springframework.web.server.ResponseStatusException;
 
+import java.lang.reflect.Field;
 import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 
 @RestController
 public class Controller {
+	
+	 //creo una variabile della classe Service
+	@Autowired  //il controllore dipende da service, stiamo dunque iniettando una dipendenza
 	private VegetablesService service;
 
 
@@ -23,9 +28,8 @@ public class Controller {
      */
 	
 	
-	 //creo una variabile della classe Service
-		@Autowired  //il controllore dipende da service, stiamo dunque iniettando una dipendenza
-public Controller(VegetablesService service) {
+	
+public Controller (VegetablesService service) {
     this.service = service;
 }
 //metodi per la comunicazione con il client che gestiscono le richieste GET e POST
