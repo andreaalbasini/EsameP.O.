@@ -21,6 +21,10 @@ public class Controller {
      *
      * @param service riferimento all'istanza del service inizializzata da Spring
      */
+	
+	
+	 //creo una variabile della classe Service
+		@Autowired  //il controllore dipende da service, stiamo dunque iniettando una dipendenza
 public Controller(VegetablesService service) {
     this.service = service;
 }
