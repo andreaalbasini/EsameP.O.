@@ -43,11 +43,11 @@ public class DownloadandParsing {
 			this.limit = 1000;
 		}
 		
-		public DownloadandParsing(int limit) {
+		/*public DownloadandParsing(int limit) {
 			this.vegetablesList = new Vector<Vegetablesproducts>();
 			this.limit = limit;
 		}
-		
+		*/
 		public String download(String url) {
 			try {
 				URLConnection openConnection = new URL(url).openConnection();  //crea una connesione tra applicazioe e url
@@ -75,7 +75,8 @@ public class DownloadandParsing {
 				 for(Object obj : objectArray) {
 					 if (obj instanceof JSONObject) {
 						 JSONObject obj1 = (JSONObject)obj;
-						if(((String)obj1.get("format")).toLowerCase().contains("csv") && ((String)obj1.get("url")).contains("market-prices-vegetable-products_en"))  // estrae il csv desiderato verificando la presenza della stringa student nell'url che si vuole estrarre
+						if(((String)obj1.get("format")).toLowerCase().contains("csv") && ((String)obj1.get("url")).contains("market-prices-vegetable-products_en"))  // estrae il csv desiderato verificando la presenza della stringa 
+							//   "market-prices-vegetable-products_en" nell'url che si vuole estrarre
 							 link = (String)obj1.get("url");
 					 }
 				 }			
@@ -100,7 +101,7 @@ public class DownloadandParsing {
 		public List<Vegetablesproducts> parsing(String link) {
 			
 			String line = "";
-		    String csvSplitBy = "\"";  // carattere che divide i valori del csv
+		    String csvSplitBy = "\"";  // carattere che divide i valori del csv,in questo caso le virgolette
 		    BufferedReader br= null;
 		    boolean flag1= false, flag2= false;
 		    int count = 1;
@@ -112,10 +113,10 @@ public class DownloadandParsing {
 		    	while (((line = br.readLine()) != null) && !flag2) {
 		    		if (count==this.limit) flag2= true;  // esce dal ciclo quando la variabile count è uguale a limit
 		    		if (!flag1) {flag1=true; continue;}  // permette di saltare la prima riga del csv
-		    		String[] valore = line.split(csvSplitBy); // dopo aver letto una riga del csv la divide ogni volta che trova un carattere ","
-		    		String[] valore2 = new String[9];
-		    		for(int i=0, k=0; i<valore.length;i++ ) {
-		    			if(i % 2 != 0) {
+		    		String[] valore = line.split(csvSplitBy); // dopo aver letto una riga del csv la divide ogni volta che trova le virgolette
+		    		String[] valore2 = new String[9];   
+		    		for(int i=0, k=0; i<valore.length;i++ ) {      
+		    			if(i % 2 != 0) {       //condizione che permette di "filtrare" e di prendere solo i valori desiderati
 		    				valore2[k] = valore[i];
 		    				k++;
 		    			}
@@ -150,13 +151,7 @@ public class DownloadandParsing {
 		public List<Vegetablesproducts> getData(){
 			return vegetablesList;
 		}
-	
-	
-		
-		
-		
-	}	
-
+}
 
 	
 
