@@ -1,29 +1,31 @@
-package utilities;
+package Esamesettembre.Univpm.utilities;
 
 
-	import java.io.BufferedReader;
-	import java.io.InputStream;
-	import java.io.InputStreamReader;
-	import java.net.URL;
-	import java.net.URLConnection;
-	import java.io.FileNotFoundException;
-	import java.io.IOException;
-	import java.util.*;
 
-	import org.json.simple.JSONArray;
-	import org.json.simple.JSONObject;
-	import org.json.simple.JSONValue;
-	import org.json.simple.parser.ParseException;
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.URL;
+import java.net.URLConnection;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.*;
 
-	import model.Vegetablesproducts;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.JSONValue;
+import org.json.simple.parser.ParseException;
 
-	/**
-	 * 
-	 * Classe che racchiude i metodi per il download del dataset e il parsing del file csv contenuto nell'url del dataset
-	 * 
-	 */
+import Esamesettembre.Univpm.model.Vegetablesproducts;
 
-	public class DownloadandParsing {
+/**
+ * 
+ * Classe che racchiude i metodi per il download del dataset e il parsing del file csv contenuto nell'url del dataset
+ * 
+ */
+
+public class DownloadandParsing {
+
 		
 		private List<Vegetablesproducts> vegetablesList;
 		private int limit;
@@ -73,7 +75,7 @@ package utilities;
 				 for(Object obj : objectArray) {
 					 if (obj instanceof JSONObject) {
 						 JSONObject obj1 = (JSONObject)obj;
-						if(((String)obj1.get("format")).toLowerCase().contains("csv") && ((String)obj1.get("url")).contains("student"))  // estrae il csv desiderato verificando la presenza della stringa student nell'url che si vuole estrarre
+						if(((String)obj1.get("format")).toLowerCase().contains("csv") && ((String)obj1.get("url")).contains("market-prices-vegetable-products_en"))  // estrae il csv desiderato verificando la presenza della stringa student nell'url che si vuole estrarre
 							 link = (String)obj1.get("url");
 					 }
 				 }			
@@ -144,4 +146,7 @@ package utilities;
 		
 		
 	}	
+
+
+	
 
