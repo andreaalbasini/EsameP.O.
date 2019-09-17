@@ -6,9 +6,6 @@ public class Vegetablesproducts implements Serializable {
 
 
  
-		/**
-		 * 
-		 */
 		private static final long serialVersionUID = 1L;
 		private String Category, SectorCode, ProductCode, ProductDesc, ProductBriefDescription, Unit, Country;
 		private int Period;
@@ -75,8 +72,7 @@ public class Vegetablesproducts implements Serializable {
 	    
 	    @Override
 	    public String toString() {
-	        return "Products: {" +
-	                "Category='" + Category  +
+	        return "Products: {Category='" + Category  +
 	                ", SectorCode='" + SectorCode + 
 	                ", ProductCode='" + ProductCode + 
 	                ", ProductDesc='" + ProductDesc + 
