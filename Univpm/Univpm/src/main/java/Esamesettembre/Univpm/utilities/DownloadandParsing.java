@@ -98,8 +98,9 @@ public class DownloadandParsing {
 		
 		
 		public List<Vegetablesproducts> parsing(String link) {
+			
 			String line = "";
-		    String csvSplitBy = ",";  // carattere che divide i valori del csv
+		    String csvSplitBy = "\"";  // carattere che divide i valori del csv
 		    BufferedReader br= null;
 		    boolean flag1= false, flag2= false;
 		    int count = 1;
@@ -111,8 +112,17 @@ public class DownloadandParsing {
 		    	while (((line = br.readLine()) != null) && !flag2) {
 		    		if (count==this.limit) flag2= true;  // esce dal ciclo quando la variabile count è uguale a limit
 		    		if (!flag1) {flag1=true; continue;}  // permette di saltare la prima riga del csv
-		    		String[] valore = line.split(csvSplitBy);  // dopo aver letto una riga del csv la divide ogni volta che trova un carattere ","
-		    		vegetablesList.add(new Vegetablesproducts (valore[0],valore[1],valore[2],valore[3],valore[4],valore[5],valore[6],Integer.parseInt(valore[7]),Double.parseDouble(valore[8]) ));
+		    		String[] valore = line.split(csvSplitBy); // dopo aver letto una riga del csv la divide ogni volta che trova un carattere ","
+		    		String[] valore2 = new String[9];
+		    		for(int i=0, k=0; i<valore.length;i++ ) {
+		    			if(i % 2 != 0) {
+		    				valore2[k] = valore[i];
+		    				k++;
+		    			}
+		    		}
+		    		
+		    		
+		    		vegetablesList.add(new Vegetablesproducts (valore2[0],valore2[1],valore2[2],valore2[3],valore2[4],valore2[5],valore2[6],Integer.parseInt(valore2[7]),Double.parseDouble(valore2[8]) ));
 	    			
 		    		count++;
 		    	}
