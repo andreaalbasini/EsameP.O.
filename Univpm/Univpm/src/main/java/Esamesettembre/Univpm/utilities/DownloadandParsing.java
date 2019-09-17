@@ -32,8 +32,8 @@ public class DownloadandParsing {
 		private String link = "";
 		
 		/**
-		 * Due tipi di costruttori permettono la lettura controllata del dataset. Nel primo caso si inizializza la variabile limit a 1000,
-		 * nel secondo si passa al costruttore il parametro contenente il valore del limite desiderato.
+		 * Un costruttore permette la lettura controllata del dataset.Si inizializza la variabile limit a 1000.
+		 * 
 		 * @return 
 		 * 
 		 */
@@ -43,11 +43,7 @@ public class DownloadandParsing {
 			this.limit = 1000;
 		}
 		
-		/*public DownloadandParsing(int limit) {
-			this.vegetablesList = new Vector<Vegetablesproducts>();
-			this.limit = limit;
-		}
-		*/
+	
 		public String download(String url) {
 			try {
 				URLConnection openConnection = new URL(url).openConnection();  //crea una connesione tra applicazioe e url
