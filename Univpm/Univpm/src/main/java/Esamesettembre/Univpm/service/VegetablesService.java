@@ -12,7 +12,7 @@ import Esamesettembre.Univpm.model.*;
 
 /**
  * 
- * Classe che gestisce le operazioni di download e carica del dataset e che mette in comunicazione tutte le le classi con il controlle
+ * Classe che gestisce le operazioni di download e carica del dataset e che mette in comunicazione tutte le le classi con il controller
  * attraverso metodi opportunamente costruiti
  *
  */
