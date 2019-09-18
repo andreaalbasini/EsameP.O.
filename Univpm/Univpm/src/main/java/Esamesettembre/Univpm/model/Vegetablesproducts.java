@@ -1,15 +1,22 @@
 package Esamesettembre.Univpm.model;
 
 import java.io.Serializable;
+
+
+/**
+ * 
+ *	Classe che modella i campi del file CSV
+ *
+ */
 public class Vegetablesproducts implements Serializable { 
 	
 		private String Category, SectorCode, ProductCode, ProductDesc, ProductBriefDescription, Unit, Country;
 		private int Period;
 		private double  MPMarketPrice; 
+	
 		/**
-		 * Costruttore della classe
-		 * 
-		 * @param Category
+		 * Costruttore
+		 * @param Category 
 		 * @param SectorCode
 		 * @param ProductCode
 		 * @param ProductDesc
@@ -18,7 +25,6 @@ public class Vegetablesproducts implements Serializable {
 		 * @param Country
 		 * @param Period
 		 * @param MPMarketPrice
-		
 		 */
 			public  Vegetablesproducts (String Category, String SectorCode, String ProductCode, String ProductDesc, String ProductBriefDescription,String  Unit, String  Country,  int Period, double  MPMarketPrice )
 		{
@@ -33,7 +39,7 @@ public class Vegetablesproducts implements Serializable {
 			this.MPMarketPrice= MPMarketPrice;
 		}
 		
-		
+	
 		public String getCategory() {
 	        return Category;
 	        
@@ -61,6 +67,11 @@ public class Vegetablesproducts implements Serializable {
 	    }public double getMPMarketPrice() {
 	        return MPMarketPrice;
 	    }
+	  
+	    /**
+	     * Stampa l'oggetto
+	     */
+	    
 	    
 	    @Override
 	    public String toString() {
