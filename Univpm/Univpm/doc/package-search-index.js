@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"Esamesettembre.Univpm"},{"l":"Esamesettembre.Univpm.controller"},{"l":"Esamesettembre.Univpm.model"},{"l":"Esamesettembre.Univpm.service"},{"l":"Esamesettembre.Univpm.utilities"}]
