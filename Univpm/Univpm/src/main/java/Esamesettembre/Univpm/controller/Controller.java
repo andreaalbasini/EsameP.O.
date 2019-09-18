@@ -16,25 +16,15 @@ import java.util.Map;
 
 @RestController
 public class Controller {
-	
-
-
-
-		
-		 //creo una variabile della classe Service
+	 //creo una variabile della classe Service
 		@Autowired  //il controllore dipende da service, stiamo dunque iniettando una dipendenza
 		private VegetablesService service;
-
-
 		/**
 	     * Costruttore che con l'annotazione @Autowired viene lanciato automaticamente all'avvio da Spring e esegue il collegamento al Service
 	     *
 	     * @param service riferimento all'istanza del service inizializzata da Spring
 	     */
-		
-		
-		
-	  public Controller (VegetablesService service) {
+			  public Controller (VegetablesService service) {
 	    this.service = service;
 	  }
 	//metodi per la comunicazione con il client che gestiscono le richieste GET e POST

@@ -3,15 +3,9 @@ package Esamesettembre.Univpm.model;
 import java.io.Serializable;
 public class Vegetablesproducts implements Serializable { 
 	
-
-
- 
-		private static final long serialVersionUID = 1L;
 		private String Category, SectorCode, ProductCode, ProductDesc, ProductBriefDescription, Unit, Country;
 		private int Period;
 		private double  MPMarketPrice; 
-		
-		
 		/**
 		 * Costruttore della classe
 		 * 
@@ -26,9 +20,7 @@ public class Vegetablesproducts implements Serializable {
 		 * @param MPMarketPrice
 		
 		 */
-
-		
-		public  Vegetablesproducts (String Category, String SectorCode, String ProductCode, String ProductDesc, String ProductBriefDescription,String  Unit,String  Country,  int Period, double  MPMarketPrice )
+			public  Vegetablesproducts (String Category, String SectorCode, String ProductCode, String ProductDesc, String ProductBriefDescription,String  Unit, String  Country,  int Period, double  MPMarketPrice )
 		{
 			this.Category= Category;
 			this.SectorCode= SectorCode;

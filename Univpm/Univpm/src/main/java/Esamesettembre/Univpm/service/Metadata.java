@@ -1,30 +1,17 @@
 package Esamesettembre.Univpm.service;
-
-
-
 import Esamesettembre.Univpm.model.Vegetablesproducts;
 import java.lang.reflect.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-
-
 /**
  * Classe utile per la gestione dei matadati quando vengono richiesti
  */
 public class Metadata {
-
-
-
-
-
 	/**
 	 * Classe utile per la gestione dei matadati quando vengono richiesti
 	 */
-	
-
 		private List<Map> metadata = new ArrayList<>();
 			
 			public Metadata() {
@@ -41,8 +28,7 @@ public class Metadata {
 		        	}
 
 		        }
-			
-		        /**
+			   /**
 			 * Metodo che ritorna la lista di mappe contenente i metadati
 			 * 
 			 * @return lista dei metadati
