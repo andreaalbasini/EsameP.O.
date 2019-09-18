@@ -139,7 +139,6 @@ public class Statistiche {
 		 * @param lista contiene la lista dei valori utili per il calcolo delle statistiche
 		 * @return
 		 */
-		
 		public Map<String, Object> getStats(String campo, List<Object> lista) {
 			Map<String, Object> mappa = new HashMap<>();
 			if(!lista.isEmpty()) {

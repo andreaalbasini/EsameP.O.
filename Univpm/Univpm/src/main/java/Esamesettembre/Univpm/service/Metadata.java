@@ -9,9 +9,9 @@ import java.util.Map;
  * Classe utile per la gestione dei matadati quando vengono richiesti
  */
 public class Metadata {
-	/**
-	 * Classe utile per la gestione dei matadati quando vengono richiesti
-	 */
+	
+	
+	
 		private List<Map> metadata = new ArrayList<>();
 			
 			public Metadata() {

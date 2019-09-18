@@ -21,9 +21,8 @@ import Esamesettembre.Univpm.model.Vegetablesproducts;
 /**
  * 
  * Classe che racchiude i metodi per il download del dataset e il parsing del file csv contenuto nell'url del dataset
- * 
+ *
  */
-
 public class DownloadandParsing {
 
 		
@@ -31,19 +30,19 @@ public class DownloadandParsing {
 		private int limit;
 		private String link = "";
 		
-		/**
-		 * Un costruttore permette la lettura controllata del dataset.Si inizializza la variabile limit a 1000.
-		 * 
-		 * @return 
-		 * 
-		 */
-		
+	/**
+	 * Costruttore che mette un limite alle righe del dataset
+	 */
 		public DownloadandParsing () {
 			this.vegetablesList = new ArrayList<Vegetablesproducts>();
 			this.limit = 1000;
 		}
 		
-	
+	/**
+	 * Metodo che effettua il download del dataset estraendo il link del csv 
+	 * @param url	stringa che contiene l'url del dataset assegnatoci
+	 * @return	ritorna una stringa contenuta il link url del csv
+	 */
 		public String download(String url) {
 			try {
 				URLConnection openConnection = new URL(url).openConnection();  //crea una connesione tra applicazioe e url
@@ -85,14 +84,12 @@ public class DownloadandParsing {
 			return link;
 		}
 		
+	
 		/**
 		 * Metodo che effettua il parsing del file csv estratto precedentemente col metodo download
-		 * 
-		 * @param link contiene l'url del csv
-		 * @return lista di oggetti Vegetablesproducts con i relativi attributi contenenti i valori del dataset
+		 * @param link	contiene l'url del csv
+		 * @return	lista di oggetti Erasmus con i relativi attributi contenenti i valori del dataset
 		 */
-		
-		
 		
 		public List<Vegetablesproducts> parsing(String link) {
 			
@@ -144,6 +141,8 @@ public class DownloadandParsing {
 		
 		// Metodo che restituisce la lista Vegetablesproducts in alternativa al metodo parsing
 		
+		
+	
 		public List<Vegetablesproducts> getData(){
 			return vegetablesList;
 		}

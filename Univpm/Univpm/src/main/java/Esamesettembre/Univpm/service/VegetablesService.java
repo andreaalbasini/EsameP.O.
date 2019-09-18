@@ -12,7 +12,7 @@ import Esamesettembre.Univpm.model.*;
 
 /**
  * 
- * Classe che gestisce le operazioni di download e carica del dataset e che mette in comunicazione tutte le le classi con il controller
+ *  Classe che gestisce le operazioni di download e carica del dataset e che mette in comunicazione tutte le le classi con il controller
  * attraverso metodi opportunamente costruiti
  *
  */
@@ -28,8 +28,10 @@ public class VegetablesService {
 			
 			/**
 			 * Costruttore che effettua al primo avvio dell'applicazione il download e il parsing dei dati che restituiscono i valori del file csv
-			 * 
 			 */
+			
+			 
+			 
 			public VegetablesService() {
 				
 				this.utilities = new DownloadandParsing();
@@ -42,25 +44,29 @@ public class VegetablesService {
 				link = utilities.download(url);
 			    lista = utilities.parsing(link);
 			}
-			
+		
 			/**
-			 * Metodo che restituisce i metadati del file CSV
-			 * @return la lista contenente i metadati
+			 * * Metodo che restituisce i metadati del file CSV
+			 * 
+			 * @return	la lista contenente i metadati
 			 */
+			
 			public List<Map> getMetadata() {
 				return serviceMeta.getMetadata();
 			}
 			
-			/**
-			 * Metodo che restituisce i dati del file csv
-			 * @return lista dei dati csv
-			 */
+		/**
+		 * Metodo che restituisce i dati del file csv
+			
+		 * @return  lista dei dati csv
+		 */
 			public List<Vegetablesproducts> getData() {
 		 		return this.lista;
 			}
 			
 			/**
 			 * Metodo che restituisce le statistiche di un dato attributo
+			 
 			 * @param nomeCampo contiene il valore dell'attributo del quale si vogliono calcolare le statistiche
 			 * @return map delle statistiche desiderate
 			 */
@@ -79,12 +85,13 @@ public class VegetablesService {
 			
 		
 			
-			/**
-			 * Metodo che estrae i valori di un determinato campo, passato tramite fieldName
-			 * @param fieldName nome del campo del file CSV
-			 * @param list lista che si ottiene dopo aver effettuato il parsing, vettore di oggetti "Vegetablesproducts"
-			 * @return la lista che contiene i valori di un determinato campo
-			 */
+		/**
+		 * Metodo che estrae i valori di un determinato campo, passato tramite fieldName
+			
+		 * @param fieldName nome del campo del file CSV
+		 * @param list lista che si ottiene dopo aver effettuato il parsing, vettore di oggetti "Vegetablesproducts"
+		 * @return la lista che contiene i valori di un determinato campo
+		 */
 			public List fieldValues(String fieldName, List list) {
 				List<Object> values = new ArrayList<>();
 				try {
