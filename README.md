@@ -72,17 +72,19 @@ Period
 MPMarketPrice
 
 ## UML diagrams
-
+### [](https://github.com/ErmelindaBegotaraj/Progetto)Classi
 ![enter image description here](https://raw.githubusercontent.com/andreaalbasini/EsameP.O./master/Univpm/Univpm/Diagrammadellclassi.jpg)
 
 
+### Sequenze
 
+#### GET data
 ![enter image description here](https://raw.githubusercontent.com/ErmelindaBegotaraj/Progetto/master/Progetto/diagrammi/sequenzeData.jpg)
-
+#### GET metadata
 ![enter image description here](https://raw.githubusercontent.com/ErmelindaBegotaraj/Progetto/master/Progetto/diagrammi/sequenzeMetadata.jpg)
 
-
+#### GET stats
 ![enter image description here](https://raw.githubusercontent.com/ErmelindaBegotaraj/Progetto/master/Progetto/diagrammi/sequenzestats.jpg)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1NTE4Njc2OSwxNjg3Njg4OTk5XX0=
+eyJoaXN0b3J5IjpbMTQwMjUxODI5NiwxNjg3Njg4OTk5XX0=
 -->
