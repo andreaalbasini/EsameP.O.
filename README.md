@@ -5,7 +5,7 @@ Progetto per il corso di Programmazione ad oggetti dell'università Politecnico 
 
  
 
-## *Introduzione*
+## Introduzione
 
 L’applicazione, basata sul linguaggio di programmazione Java, sfrutta il framework Spring e i vantaggi di un linguaggio OOP (incapsulamento, ereditarietà e polimorfismo). Inoltre, restituisce tramite API REST GET dati e statistiche in formato JSON a partire da un dataset assegnatoci in formato csv. Il progetto può essere compilato attraverso i framework Maven e Gradle che gestiscono l'importazione delle librerie Spring.
 
@@ -73,8 +73,8 @@ MPMarketPrice.
 
 ## UML diagrams
 
-
-
+### Casi d'uso
+![enter image description here](https://raw.githubusercontent.com/andreaalbasini/EsameP.O./master/Univpm/Univpm/diagrammi%20uml/Casid%27uso.jpg)
 
 
 ### Classi
@@ -91,6 +91,6 @@ MPMarketPrice.
 #### GET stats
 ![enter image description here](https://raw.githubusercontent.com/ErmelindaBegotaraj/Progetto/master/Progetto/diagrammi/sequenzestats.jpg)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjYyNTk5MDAsLTk1Njk1OTIwMiwxNj
-g3Njg4OTk5XX0=
+eyJoaXN0b3J5IjpbLTE1MzQ2MzAwMjYsLTEyNjYyNTk5MDAsLT
+k1Njk1OTIwMiwxNjg3Njg4OTk5XX0=
 -->
