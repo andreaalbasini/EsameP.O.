@@ -82,7 +82,7 @@ MPMarketPrice
 ![enter image description here](https://raw.githubusercontent.com/ErmelindaBegotaraj/Progetto/master/Progetto/diagrammi/sequenzeMetadata.jpg)
 
 
-
+![enter image description here](https://raw.githubusercontent.com/ErmelindaBegotaraj/Progetto/master/Progetto/diagrammi/sequenzestats.jpg)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODM2ODUwMDYsMTY4NzY4ODk5OV19
+eyJoaXN0b3J5IjpbMjA1NTE4Njc2OSwxNjg3Njg4OTk5XX0=
 -->
