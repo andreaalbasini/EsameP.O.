@@ -73,8 +73,8 @@ MPMarketPrice.
 
 ## UML diagrams
 
-
-
+### Casi d'uso
+![enter image description here](https://raw.githubusercontent.com/andreaalbasini/EsameP.O./master/Univpm/Univpm/diagrammi%20uml/Casid%27uso.jpg)
 
 
 ### Classi
@@ -91,6 +91,6 @@ MPMarketPrice.
 #### GET stats
 ![enter image description here](https://raw.githubusercontent.com/ErmelindaBegotaraj/Progetto/master/Progetto/diagrammi/sequenzestats.jpg)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjYyNTk5MDAsLTk1Njk1OTIwMiwxNj
-g3Njg4OTk5XX0=
+eyJoaXN0b3J5IjpbLTY5MzU3Nzg1NCwtMTI2NjI1OTkwMCwtOT
+U2OTU5MjAyLDE2ODc2ODg5OTldfQ==
 -->
