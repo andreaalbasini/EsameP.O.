@@ -73,8 +73,11 @@ MPMarketPrice
 
 ## UML diagrams
 
+![enter image description here](https://raw.githubusercontent.com/andreaalbasini/EsameP.O./master/Univpm/Univpm/Diagrammadellclassi.jpg)
+
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4NzY4ODk5OV19
+eyJoaXN0b3J5IjpbMTA3NjU0OTExOSwxNjg3Njg4OTk5XX0=
 -->
