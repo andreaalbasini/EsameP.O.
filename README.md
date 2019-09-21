@@ -78,8 +78,7 @@ MPMarketPrice.
 
 
 ### Classi
-![enter image description here](https://raw.githubusercontent.com/andreaalbasini/EsameP.O./master/Univpm/Univpm/Diagrammadellclassi.jpg)
-
+![enter image description here](https://raw.githubusercontent.com/andreaalbasini/EsameP.O./master/Univpm/Univpm/diagrammi%20uml/Diagrammadellclassi.jpg)
 
 ### Sequenze
 
@@ -91,6 +90,6 @@ MPMarketPrice.
 #### GET stats
 ![enter image description here](https://raw.githubusercontent.com/ErmelindaBegotaraj/Progetto/master/Progetto/diagrammi/sequenzestats.jpg)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MzQ2MzAwMjYsLTEyNjYyNTk5MDAsLT
-k1Njk1OTIwMiwxNjg3Njg4OTk5XX0=
+eyJoaXN0b3J5IjpbOTQwNjUzODE3LC0xNTM0NjMwMDI2LC0xMj
+Y2MjU5OTAwLC05NTY5NTkyMDIsMTY4NzY4ODk5OV19
 -->
