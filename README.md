@@ -5,7 +5,7 @@ Progetto per il corso di Programmazione ad oggetti dell'università Politecnico 
 
  
 
-## *Introduzione*
+## Come utilizzare il software
 
 L’applicazione, basata sul linguaggio di programmazione Java, sfrutta il framework Spring e i vantaggi di un linguaggio OOP (incapsulamento, ereditarietà e polimorfismo). Inoltre, restituisce tramite API REST GET dati e statistiche in formato JSON a partire da un dataset assegnatoci in formato csv. Il progetto può essere compilato attraverso i framework Maven e Gradle che gestiscono l'importazione delle librerie Spring.
 
@@ -91,6 +91,6 @@ MPMarketPrice.
 #### GET stats
 ![enter image description here](https://raw.githubusercontent.com/ErmelindaBegotaraj/Progetto/master/Progetto/diagrammi/sequenzestats.jpg)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5MzU3Nzg1NCwtMTI2NjI1OTkwMCwtOT
+eyJoaXN0b3J5IjpbMTIyNDY3MDQ3MSwtMTI2NjI1OTkwMCwtOT
 U2OTU5MjAyLDE2ODc2ODg5OTldfQ==
 -->
