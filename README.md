@@ -61,15 +61,15 @@ che restituisce:
 ]
 ```
 _**Di seguito viene elencata la lista degli attributi:**_
-Category
-SectorCode
-ProductCode 
-ProductDesc  
-ProductBriefDescription 
-Unit
-Country
-Period
-MPMarketPrice
+Category;
+SectorCode;
+ProductCode ;
+ProductDesc ;
+ProductBriefDescription ;
+Unit;
+Country;
+Period;
+MPMarketPrice.
 
 ## UML diagrams
 ### Classi
@@ -86,5 +86,5 @@ MPMarketPrice
 #### GET stats
 ![enter image description here](https://raw.githubusercontent.com/ErmelindaBegotaraj/Progetto/master/Progetto/diagrammi/sequenzestats.jpg)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzc4OTE5NjI4LDE2ODc2ODg5OTldfQ==
+eyJoaXN0b3J5IjpbLTk1Njk1OTIwMiwxNjg3Njg4OTk5XX0=
 -->
