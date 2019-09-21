@@ -83,14 +83,14 @@ MPMarketPrice.
 ### Sequenze
 
 #### GET data
-
+![enter image description here](https://raw.githubusercontent.com/andreaalbasini/EsameP.O./master/Univpm/Univpm/diagrammi%20uml/sequenzeData.jpg)
 #### GET metadata
 ![enter image description here](https://raw.githubusercontent.com/andreaalbasini/EsameP.O./master/Univpm/Univpm/diagrammi%20uml/sequenzeMetadata.jpg)
 
 #### GET stats
 ![enter image description here](https://raw.githubusercontent.com/andreaalbasini/EsameP.O./master/Univpm/Univpm/diagrammi%20uml/sequenzestats.jpg)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Mjg5Mjk5MjcsOTQwNjUzODE3LC0xNT
-M0NjMwMDI2LC0xMjY2MjU5OTAwLC05NTY5NTkyMDIsMTY4NzY4
-ODk5OV19
+eyJoaXN0b3J5IjpbLTM4MjcxOTI5OSw5NDA2NTM4MTcsLTE1Mz
+Q2MzAwMjYsLTEyNjYyNTk5MDAsLTk1Njk1OTIwMiwxNjg3Njg4
+OTk5XX0=
 -->
