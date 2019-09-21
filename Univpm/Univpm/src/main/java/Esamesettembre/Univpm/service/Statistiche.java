@@ -3,8 +3,6 @@ import java.util.*;
 public class Statistiche {
 	
 	
-	
-
 		
 		/**
 		 * Metodo che effettua un conteggio sul numero di elementi di una lista
@@ -139,6 +137,7 @@ public class Statistiche {
 		 * @param lista contiene la lista dei valori utili per il calcolo delle statistiche
 		 * @return
 		 */
+		
 		public Map<String, Object> getStats(String campo, List<Object> lista) {
 			Map<String, Object> mappa = new HashMap<>();
 			if(!lista.isEmpty()) {

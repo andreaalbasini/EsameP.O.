@@ -69,8 +69,10 @@ public class Controller {
 	    		list.add(service.getStatistiche(fieldName));
 	    		return list;
 	    	}
-		}
+		
+	    }
 	}
+
 
 
 

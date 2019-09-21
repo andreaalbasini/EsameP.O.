@@ -10,6 +10,8 @@ import java.io.Serializable;
  */
 public class Vegetablesproducts implements Serializable { 
 	
+	
+	
 		private String Category, SectorCode, ProductCode, ProductDesc, ProductBriefDescription, Unit, Country;
 		private int Period;
 		private double  MPMarketPrice; 
