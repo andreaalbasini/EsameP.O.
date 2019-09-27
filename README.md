@@ -80,17 +80,9 @@ MPMarketPrice.
 ### Classi
 ![enter image description here](https://raw.githubusercontent.com/andreaalbasini/EsameP.O./master/Univpm/Univpm/diagrammi%20uml/Diagrammadellclassi.jpg)
 
-### Sequenze
 
-#### GET data
-![enter image description here](https://raw.githubusercontent.com/andreaalbasini/EsameP.O./master/Univpm/Univpm/diagrammi%20uml/sequenzeData.jpg)
-#### GET metadata
-![enter image description here](https://raw.githubusercontent.com/andreaalbasini/EsameP.O./master/Univpm/Univpm/diagrammi%20uml/sequenzeMetadata.jpg)
-
-#### GET stats
-![enter image description here](https://raw.githubusercontent.com/andreaalbasini/EsameP.O./master/Univpm/Univpm/diagrammi%20uml/sequenzestats.jpg)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4MjcxOTI5OSw5NDA2NTM4MTcsLTE1Mz
-Q2MzAwMjYsLTEyNjYyNTk5MDAsLTk1Njk1OTIwMiwxNjg3Njg4
-OTk5XX0=
+eyJoaXN0b3J5IjpbMTE4NzQwMzE4NCwtMzgyNzE5Mjk5LDk0MD
+Y1MzgxNywtMTUzNDYzMDAyNiwtMTI2NjI1OTkwMCwtOTU2OTU5
+MjAyLDE2ODc2ODg5OTldfQ==
 -->
