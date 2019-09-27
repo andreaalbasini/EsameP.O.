@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
+import java.util.*;
 /**
  * 
  * Controller Spring che gestisce le richieste del client
@@ -46,7 +46,7 @@ public class Controller {
 	     * @return lista dei metadata
 	     */
 	    @GetMapping("/metadata")
-	    public List<Map> getMetadata() {
+	    public Object   getMetadata() {
 	        return service.getMetadata();
 	    }
 		

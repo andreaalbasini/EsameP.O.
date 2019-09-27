@@ -52,7 +52,7 @@ public class VegetablesService {
 			 * @return	la lista contenente i metadati
 			 */
 			
-			public List<Map> getMetadata() {
+			public Object getMetadata() {
 				return serviceMeta.getMetadata();
 			}
 			
