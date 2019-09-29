@@ -36,7 +36,7 @@ public class DownloadandParsing {
 	 */
 		public DownloadandParsing () {
 			this.vegetablesList = new ArrayList<Vegetablesproducts>();
-			this.limit = 1000;
+			this.limit = 10000;
 		}
 		
 	/**

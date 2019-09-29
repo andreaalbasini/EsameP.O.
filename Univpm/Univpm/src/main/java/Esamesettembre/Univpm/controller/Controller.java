@@ -58,14 +58,19 @@ public class Controller {
 	    @GetMapping("/stats")
 	    public List<Map> getStats(@RequestParam(value = "field", defaultValue = "") String fieldName) {
 	    	Field[] fields = Vegetablesproducts.class.getDeclaredFields();
-	    	List<Map> list = new ArrayList<>();
-	    	if(fieldName.equals("")) {  // se non viene specificato il campo calcola le statistiche di ogni attributo
+	    	List list = new ArrayList<>();
+	    	
+	    	if(fieldName.equals("")) { // se non viene specificato il campo calcola le statistiche di ogni attributo
+	    		list.add("Campo non specificato");
+		    	list.add("Statistiche di tutti i campi");
 	    		for(int i=0; i < fields.length; i++) {
 	    			list.add(service.getStatistiche(fields[i].getName()));		
 	    		}
 	    		return list;
 	    	}
-	    	else {  // altrimenti calcola le statistiche del solo campo specificato
+	    	else { // altrimenti calcola le statistiche del solo campo specificato
+	    		
+	    		//list.add("Statistiche del campo desiderato");
 	    		list.add(service.getStatistiche(fieldName));
 	    		return list;
 	    	}

@@ -90,7 +90,7 @@ public class Statistiche {
 		public static Map<Object, Integer> ElementiUnici(List lista) {
 			Map<Object,Integer> mappa = new HashMap<>();  //creazione della mappa
 			for(Object obj : lista) {  //scorre la lista
-				if(mappa.containsKey(obj))  //controlla se la chiave esiste gi�
+				if(mappa.containsKey(obj))  //controlla se la chiave esiste già
 					mappa.replace(obj, mappa.get(obj) + 1);  //se esiste aumenta il suo valore di 1
 				else
 					mappa.put(obj, 1);  //se non esiste la crea e le assegna il valore 1
@@ -104,59 +104,67 @@ public class Statistiche {
 		 * @param lista fornisce i valori con i quali si possono calcolare tutte le statistiche
 		 * @return map che contiene come chiavi il nome della statistica e come valore quello calcolato tramite i metodi della classe
 		 */
-		public static Map<String, Object> NumStats(String campo, List<Number> lista) {
-			Map<String, Object> mappa = new HashMap<>();  //crea una mappa che contiene le chiavi e i valori delle statistiche numeriche
-			mappa.put("field", campo);
-			mappa.put("count", count(lista));
-			mappa.put("sum", sum(lista));
-			mappa.put("avg", avg(lista));
-	        mappa.put("max", max(lista));
-	        mappa.put("min", min(lista));
-	        mappa.put("DevStd", DevStd(lista));
-	        return mappa;
+		public static List<String> NumStats(String campo, List<Number> lista){
+			List<String> list = new ArrayList<>();  //crea una mappa che contiene le chiavi e i valori delle statistiche numeriche
+			list.add("field:"+ campo);
+			list.add("count:"+ count(lista));
+			list.add("sum:"+sum(lista));
+			list.add("avg:"+ avg(lista));
+	        list.add("max:"+ max(lista));
+	        list.add("min:"+ min(lista));
+	        list.add("DevStd:"+ DevStd(lista));
+	        return list;
 		}
+	
 		
+		 
 		/**
-		 * Metodo che restituisce una mappa nella quale vengono visualizzate tutte le statistiche non numeriche di una lista 
+		 * Metodo che restituisce una lista nella quale vengono visualizzate tutte le statistiche della lista contenente gli attributi non numerici
 		 * 
 		 * @param lista fornisce i valori con i quali si possono calcolare tutte le statistiche non numeriche
 		 * @return map che contiene come chiavi il nome della statistica e come valore quello calcolato tramite i metodi della classe
 		 */
-		public static Map<String, Object> StrStats(String campo, List lista) {
-			Map<String, Object> mappa = new HashMap<>();  //crea una mappa che contiene le chiavi e i valori delle statistiche non numeriche
-			mappa.put("field", campo);
-			mappa.put("count", count(lista));
-			mappa.put("elementi unici", ElementiUnici(lista));
-	        return mappa;
+	
+		
+		public static List<String> StrStats(String campo, List lista) {
+			List<String> lst = new ArrayList<>();  //crea una lista che contiene le statistiche non numeriche
+			lst.add("field:"+ campo);
+			lst.add("count:"+count(lista));
+			lst.add("elementi unici:"+ ElementiUnici(lista));
+	        return lst;
 		}
+		
+		
 		
 		/**
 		 * Metodo che serve a visualizzare il tipo di statistiche in base al campo specificato
 		 * 
 		 * @param campo contiene il nome dell'attributo del quale si vogliono si vogliono calcolare le statistiche 
-		 * @param lista contiene la lista dei valori utili per il calcolo delle statistiche
+		 * @param list contiene la lista dei valori utili per il calcolo delle statistiche
 		 * @return
 		 */
 		
-		public Map<String, Object> getStats(String campo, List<Object> lista) {
-			Map<String, Object> mappa = new HashMap<>();
-			if(!lista.isEmpty()) {
+	
+		
+		public List<String> getStats(String campo, List<Object> list) {
+			List<String> lst1 = new ArrayList();
+			if(!list.isEmpty()) {
 				 // se il primo valore è un numero crea una lista di numeri e gli passa i valori della lista castati a Number
-				if (lista.get(0) instanceof Number) { 
+				if (list.get(0) instanceof Number) { 
 					List<Number> numList = new ArrayList<>();
-					for (Object elem : lista) {
+					for (Object elem : list) {
 						numList.add(((Number) elem));
 					}
-					mappa = NumStats(campo, numList); // calcola le statistiche numeriche
+					lst1 = NumStats(campo, numList); // calcola le statistiche numeriche
 				}
 				// se il primo valore non è un numero calcola le statistiche per le stringhe
 				else {
-					mappa = StrStats(campo, lista);
+					lst1 = StrStats(campo, list);
 				}
 			}
-			return mappa;
-		}
+			return lst1;
 		
+		}
 	}
 
 

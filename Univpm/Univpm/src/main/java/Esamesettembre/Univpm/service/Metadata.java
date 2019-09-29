@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Classe utile per la gestione dei matadati quando vengono richiesti
+ * Classe utile per la gestione dei metadati 
  */
 public class Metadata {
 	
@@ -27,7 +27,7 @@ public class Metadata {
 		             Object[] strArray1  =  lst.toArray();
 		             
 		             ((ArrayList<Object>) metadata).add(strArray1);
-		             
+		             //Crea una lista e ci va ad aggiungere tutti gli attributi con i propri tipi
 		             }
 		        
 		      

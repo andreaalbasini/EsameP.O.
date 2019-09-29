@@ -71,13 +71,14 @@ public class VegetablesService {
 			 * @param nomeCampo contiene il valore dell'attributo del quale si vogliono calcolare le statistiche
 			 * @return map delle statistiche desiderate
 			 */
-		public Map<String, Object> getStatistiche(String nomeCampo) {
-				Map<String, Object> map = new HashMap<>();
-				Map<String, Object> mapError = new HashMap<>();
-				mapError.put("Errore", "Campo inesistente");
+		public List getStatistiche(String nomeCampo) {
+				List map = new ArrayList<>();
+				List mapError = new ArrayList<>();
+				mapError.add("Errore, campo inesistente o scrittura sbagliata");
 				Field[] fields = Vegetablesproducts.class.getDeclaredFields();
 				for (Field f : fields) {
 					if(nomeCampo.equals(f.getName()))
+					
 						map = serviceStatistiche.getStats(nomeCampo, fieldValues(nomeCampo, getData()));
 				}
 				if(map.isEmpty()) return mapError;
@@ -103,6 +104,7 @@ public class VegetablesService {
 							if(fieldName.equals(fields[i].getName())) {
 								Method m = e.getClass().getMethod("get"+fields[i].getName());
 								Object val = m.invoke(e);
+								
 								values.add(val); // se il controllo restituisce vero, aggiunge alla lista il valore dell'ogetto della lista passatagli come parametro ottenuto con il metodo getMethod
 							}
 						}
