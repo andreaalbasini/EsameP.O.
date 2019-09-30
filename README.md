@@ -71,18 +71,14 @@ Country;
 Period;
 MPMarketPrice.
 
-## UML diagrams
+## UML diagram
 
-### Casi d'uso
-![enter image description here](https://raw.githubusercontent.com/andreaalbasini/EsameP.O./master/Univpm/Univpm/diagrammi%20uml/Casid%27uso.jpg)
+![enter image description here](https://raw.githubusercontent.com/andreaalbasini/EsameP.O./master/Univpm/Univpm/Diagrammadelleclassi.jpg)
 
-
-### Classi
-![enter image description here](https://raw.githubusercontent.com/andreaalbasini/EsameP.O./master/Univpm/Univpm/diagrammi%20uml/Diagrammadellclassi.jpg)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4NzQwMzE4NCwtMzgyNzE5Mjk5LDk0MD
-Y1MzgxNywtMTUzNDYzMDAyNiwtMTI2NjI1OTkwMCwtOTU2OTU5
-MjAyLDE2ODc2ODg5OTldfQ==
+eyJoaXN0b3J5IjpbNDc1MTMyMzA1LDExODc0MDMxODQsLTM4Mj
+cxOTI5OSw5NDA2NTM4MTcsLTE1MzQ2MzAwMjYsLTEyNjYyNTk5
+MDAsLTk1Njk1OTIwMiwxNjg3Njg4OTk5XX0=
 -->
