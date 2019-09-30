@@ -40,7 +40,7 @@ localhost:8080/stats
 
 ```
 
-oppure ad esempio per il campo Category, bisogna specificare nella rotta il campo _field_ nel seguente modo:
+oppure ad esempio per il campo Category, bisogna specificare nella rotta il campo _field_ (fare attenzione alla lettera maiuscola) nel seguente modo:
 
 ```
 localhost:8080/stats?field=Category
@@ -78,7 +78,8 @@ MPMarketPrice.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDc1MTMyMzA1LDExODc0MDMxODQsLTM4Mj
-cxOTI5OSw5NDA2NTM4MTcsLTE1MzQ2MzAwMjYsLTEyNjYyNTk5
-MDAsLTk1Njk1OTIwMiwxNjg3Njg4OTk5XX0=
+eyJoaXN0b3J5IjpbLTEwNDIwNjk0ODIsNDc1MTMyMzA1LDExOD
+c0MDMxODQsLTM4MjcxOTI5OSw5NDA2NTM4MTcsLTE1MzQ2MzAw
+MjYsLTEyNjYyNTk5MDAsLTk1Njk1OTIwMiwxNjg3Njg4OTk5XX
+0=
 -->
