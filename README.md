@@ -40,7 +40,7 @@ localhost:8080/stats
 
 ```
 
-oppure ad esempio per il campo Category, bisogna specificare nella rotta il campo _field_ nel seguente modo:
+oppure ad esempio per il campo Category, bisogna specificare nella rotta il campo _field_ (fare attenzione alla lettera maiuscola) nel seguente modo:
 
 ```
 localhost:8080/stats?field=Category
@@ -71,18 +71,15 @@ Country;
 Period;
 MPMarketPrice.
 
-## UML diagrams
+## UML diagram
 
-### Casi d'uso
-![enter image description here](https://raw.githubusercontent.com/andreaalbasini/EsameP.O./master/Univpm/Univpm/diagrammi%20uml/Casid%27uso.jpg)
+![enter image description here](https://raw.githubusercontent.com/andreaalbasini/EsameP.O./master/Univpm/Univpm/Diagrammadelleclassi.jpg)
 
-
-### Classi
-![enter image description here](https://raw.githubusercontent.com/andreaalbasini/EsameP.O./master/Univpm/Univpm/diagrammi%20uml/Diagrammadellclassi.jpg)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4NzQwMzE4NCwtMzgyNzE5Mjk5LDk0MD
-Y1MzgxNywtMTUzNDYzMDAyNiwtMTI2NjI1OTkwMCwtOTU2OTU5
-MjAyLDE2ODc2ODg5OTldfQ==
+eyJoaXN0b3J5IjpbLTEwNDIwNjk0ODIsNDc1MTMyMzA1LDExOD
+c0MDMxODQsLTM4MjcxOTI5OSw5NDA2NTM4MTcsLTE1MzQ2MzAw
+MjYsLTEyNjYyNTk5MDAsLTk1Njk1OTIwMiwxNjg3Njg4OTk5XX
+0=
 -->
