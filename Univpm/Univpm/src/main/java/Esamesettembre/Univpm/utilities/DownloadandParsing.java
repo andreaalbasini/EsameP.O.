@@ -89,7 +89,7 @@ public class DownloadandParsing {
 		/**
 		 * Metodo che effettua il parsing del file csv estratto precedentemente col metodo download
 		 * @param link	contiene l'url del csv
-		 * @return	lista di oggetti Erasmus con i relativi attributi contenenti i valori del dataset
+		 * @return	vegetablesList con i relativi attributi contenenti i valori del dataset
 		 */
 		
 		public List<Vegetablesproducts> parsing(String link) {

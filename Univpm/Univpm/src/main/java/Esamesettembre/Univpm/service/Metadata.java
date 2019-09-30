@@ -20,12 +20,12 @@ public class Metadata {
 				Field[] fields = Vegetablesproducts.class.getDeclaredFields();//estrae gli attributi della classe Vegetablesproducts
 
 		        for (Field f : fields) {
-		        	 List<String> lst = new ArrayList<String>();
+		        	 List<String> lst = new ArrayList<String>(); //inizializzo la lista in cui andrò a mettere i metadata
 		             lst.add("alias:"+ f.getName());
 		             lst.add("sourceField:" +f.getName().toUpperCase());
 		             lst.add("type:" + f.getType().getSimpleName());
 		             Object[] strArray1  =  lst.toArray();
-		             
+		            
 		             ((ArrayList<Object>) metadata).add(strArray1);
 		             //Crea una lista e ci va ad aggiungere tutti gli attributi con i propri tipi
 		             }

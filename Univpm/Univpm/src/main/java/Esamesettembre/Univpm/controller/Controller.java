@@ -28,7 +28,7 @@ public class Controller {
 		public Controller (VegetablesService service) {
 	    this.service = service;
 	  }
-	//metodi per la comunicazione con il client che gestiscono le richieste GET e POST
+	//metodi per la comunicazione con il client che gestiscono le richieste GET
 
 	/**
 	 *  Metodo che gestisce la richiesta GET alla rotta "/data", restituisce l'intero dataset
@@ -42,8 +42,8 @@ public class Controller {
 	    }
 		
 	    /**
-	     *  Metodo che gestisce la richiesta GET alla rotta "/metadata", restituisce i metadata
-	     * @return lista dei metadata
+	     *  Metodo che gestisce la richiesta GET alla rotta "/metadata"
+	     * @return i metadata
 	     */
 	    @GetMapping("/metadata")
 	    public Object   getMetadata() {
@@ -70,7 +70,7 @@ public class Controller {
 	    	}
 	    	else { // altrimenti calcola le statistiche del solo campo specificato
 	    		
-	    		//list.add("Statistiche del campo desiderato");
+	    		
 	    		list.add(service.getStatistiche(fieldName));
 	    		return list;
 	    	}

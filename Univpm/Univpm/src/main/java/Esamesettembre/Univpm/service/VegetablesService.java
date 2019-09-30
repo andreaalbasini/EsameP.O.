@@ -49,7 +49,7 @@ public class VegetablesService {
 			/**
 			 * * Metodo che restituisce i metadati del file CSV
 			 * 
-			 * @return	la lista contenente i metadati
+			 * @return i metadati
 			 */
 			
 			public Object getMetadata() {
