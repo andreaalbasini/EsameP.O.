@@ -73,7 +73,7 @@ MPMarketPrice.
 
 ## UML diagrams
 
-![enter image description here](https://raw.githubusercontent.com/andreaalbasini/EsameP.O./master/Univpm/Univpm/Diagrammadelleclassi.jpg)
+![enter image description here](https://raw.githubusercontent.com/andreaalbasini/EsameP.O./master/Univpm/Univpm/diagrammi/Diagrammadelleclassi.jpg)
 
 
 ![enter image description here](https://raw.githubusercontent.com/andreaalbasini/EsameP.O./master/Univpm/Univpm/diagrammi/Interaction%20Sequence%20diagram.jpg)
@@ -82,7 +82,7 @@ MPMarketPrice.
 
 ![enter image description here](https://raw.githubusercontent.com/andreaalbasini/EsameP.O./master/Univpm/Univpm/diagrammi/Use%20Case%20diagram.jpg)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTkxNTY2NjUsLTE0MzY1OTY1OTksLT
+eyJoaXN0b3J5IjpbLTE2NzU3MTY1MDUsLTE0MzY1OTY1OTksLT
 EwNDIwNjk0ODIsNDc1MTMyMzA1LDExODc0MDMxODQsLTM4Mjcx
 OTI5OSw5NDA2NTM4MTcsLTE1MzQ2MzAwMjYsLTEyNjYyNTk5MD
 AsLTk1Njk1OTIwMiwxNjg3Njg4OTk5XX0=
