@@ -51,13 +51,9 @@ che restituisce:
 
 ```
 [
-	{
-		"field": "Category",
-		"elementi unici": {
-		"Vegetable products": 10000
-		},
-		"count": 10000
-	}
+"field:Category",
+"count:10000",
+"elementi unici:{Vegetableproducts=10000}"
 ]
 ```
 _**Di seguito viene elencata la lista degli attributi:**_
@@ -82,8 +78,8 @@ MPMarketPrice.
 
 ![enter image description here](https://raw.githubusercontent.com/andreaalbasini/EsameP.O./master/Univpm/Univpm/diagrammi/Use%20Case%20diagram.jpg)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzU3MTY1MDUsLTE0MzY1OTY1OTksLT
-EwNDIwNjk0ODIsNDc1MTMyMzA1LDExODc0MDMxODQsLTM4Mjcx
-OTI5OSw5NDA2NTM4MTcsLTE1MzQ2MzAwMjYsLTEyNjYyNTk5MD
-AsLTk1Njk1OTIwMiwxNjg3Njg4OTk5XX0=
+eyJoaXN0b3J5IjpbMjQ0ODU3MTc2LC0xNjc1NzE2NTA1LC0xND
+M2NTk2NTk5LC0xMDQyMDY5NDgyLDQ3NTEzMjMwNSwxMTg3NDAz
+MTg0LC0zODI3MTkyOTksOTQwNjUzODE3LC0xNTM0NjMwMDI2LC
+0xMjY2MjU5OTAwLC05NTY5NTkyMDIsMTY4NzY4ODk5OV19
 -->
