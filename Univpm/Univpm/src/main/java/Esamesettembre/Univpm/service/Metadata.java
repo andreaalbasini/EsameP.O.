@@ -36,9 +36,9 @@ public class Metadata {
 		        	
 		 
 			   /**
-			 * Metodo che ritorna la lista di mappe contenente i metadati
+			 * Metodo che ritorna la lista contenente i metadati
 			 * 
-			 * @return lista dei metadati
+			 * @return object contenente i metadati
 			 */
 			public Object getMetadata() {
 				return metadata;
