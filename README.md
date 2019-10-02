@@ -71,15 +71,19 @@ Country;
 Period;
 MPMarketPrice.
 
-## UML diagram
+## UML diagrams
 
 ![enter image description here](https://raw.githubusercontent.com/andreaalbasini/EsameP.O./master/Univpm/Univpm/Diagrammadelleclassi.jpg)
 
 
+![enter image description here](https://raw.githubusercontent.com/andreaalbasini/EsameP.O./master/Univpm/Univpm/diagrammi/Interaction%20Sequence%20diagram.jpg)
 
+
+
+![enter image description here](https://raw.githubusercontent.com/andreaalbasini/EsameP.O./master/Univpm/Univpm/diagrammi/Use%20Case%20diagram.jpg)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDIwNjk0ODIsNDc1MTMyMzA1LDExOD
-c0MDMxODQsLTM4MjcxOTI5OSw5NDA2NTM4MTcsLTE1MzQ2MzAw
-MjYsLTEyNjYyNTk5MDAsLTk1Njk1OTIwMiwxNjg3Njg4OTk5XX
-0=
+eyJoaXN0b3J5IjpbLTE0MzY1OTY1OTksLTEwNDIwNjk0ODIsND
+c1MTMyMzA1LDExODc0MDMxODQsLTM4MjcxOTI5OSw5NDA2NTM4
+MTcsLTE1MzQ2MzAwMjYsLTEyNjYyNTk5MDAsLTk1Njk1OTIwMi
+wxNjg3Njg4OTk5XX0=
 -->
